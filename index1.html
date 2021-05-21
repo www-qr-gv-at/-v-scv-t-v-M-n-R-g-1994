@@ -1,0 +1,240 @@
+<html lang="de">
+<style>
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup,menu, nav, section{
+	display: block;
+}
+body {
+	font-family: arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	margin: 8px;
+}
+OL, UL{
+	list-style: none;
+}
+blockquote, Q {
+	quotes: none;
+}
+BLOCKQUOTE:after, BLOCKQUOTE:before, Q:after, Q:before{
+	content: "";
+	content: none;
+}
+TABLE{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+BODY{
+	margin: 0.5rem;
+	font-family: Arial, sans-serif;
+	line-height: 24px;
+}
+#page{
+	margin: 0 auto;
+	max-width: 30rem;
+}
+MAIN{
+	display: block;
+	padding: 0.7rem;
+	margin-bottom: 0.7rem;
+	background-color: #EFEFEF;
+}
+A{
+	color: inherit;
+}
+A:hover{
+	text-decoration: none;
+}
+H1{
+	font-size: 22px;
+	line-height: 35px;
+	font-weight: 700;
+	padding: 0.7rem;
+}
+.ok H1{
+	background-color: #1C8233;
+	color: #FFF;
+}
+.warn H1{
+	background-color: #FFC107;
+	color: #343A40 !important;
+}
+.bad H1{
+	background-color: #DC3545;
+	color: #FFF;
+}
+DT{
+	font-weight: 700;
+	clear: both;
+}
+DD{
+	margin-bottom: 0.7rem;
+	font-family: "Courier New", Courier, monospace;
+}
+DD STRONG{
+	font-family: Arial, sans-serif;
+	display: inline-block;
+	padding: 0.1rem 0.4rem;
+	background-color: #555;
+	color: #FFF;
+	border-radius: 0.2rem;
+}
+DD:last-of-type{
+	margin-bottom: 0;
+}
+.inline{
+	float: left;
+	margin-top: 0.125rem;
+	margin-bottom: 0.7rem;
+}
+DT.inline{
+	min-width: 7rem;
+}
+FOOTER{
+	text-align: center;
+}
+</style>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Österreich Testet</title>
+</head>
+
+<body>
+<div id="page" class="ok">
+<h1>Prüfung: Gültig</h1>
+
+<main>
+<dl>
+<dt class="inline">Vorname:</dt>
+<dd class="inline">M</dd>
+
+<dt class="inline">Nachname:</dt>
+<dd class="inline">R</dd>
+
+<dt class="inline">Geburtsjahr:</dt>
+<dd class="inline">1992</dd>
+
+<dt>Getestet am:</dt>
+<dd><span>06.04.2021 08:47</span><br>
+
+<script>
+	testdatum = new Date();
+	testdatum.setDate(testdatum.getDate() - 1)
+	testdatum.setHours (8);
+	testdatum.setMinutes (35);
+	tag=testdatum.getDate();
+	monat=(testdatum.getMonth()+1);
+	jahr=testdatum.getFullYear();
+	if((String(tag)).length==1)
+    tag='0'+tag;
+    if((String(monat)).length==1)
+    monat='0'+monat;
+	stunden=testdatum.getHours();
+	if((String(stunden)).length==1)
+    stunden='0'+stunden;
+	minuten=testdatum.getMinutes();
+	if((String(minuten)).length==1)
+    minuten='0'+minuten;
+	document.getElementsByTagName('span')[0].innerHTML = tag + '.' + monat + '.' + jahr + ' ' + stunden + ':' + minuten;	
+</script>
+
+<strong> vor 8 Stunden</strong></dd>
+
+<script>
+	testdatum = new Date();
+	testdatum.setDate(testdatum.getDate() - 1)
+	testdatum.setHours (8);
+	testdatum.setMinutes (35);
+	testdatum.setSeconds(0);
+	aktdatum = new Date();
+	aktdatum.setDate(aktdatum.getDate());
+	differenz=Math.abs(aktdatum-testdatum)
+	stunden = differenz/(1000*3600)
+	document.getElementsByTagName('strong')[0].innerHTML = 'vor ' + Math.floor(stunden) + ' Stunden';	
+</script>
+
+<dt>Eintrittstest gültig bis:</dt>
+<dd><span>08.04.2021 08:47</span><br>
+
+<script>
+	ablaufdatum = new Date();
+	ablaufdatum.setDate(ablaufdatum.getDate() + 1)
+	ablaufdatum.setHours (8);
+	ablaufdatum.setMinutes (35);
+	tag=ablaufdatum.getDate();
+	monat=(ablaufdatum.getMonth()+1);
+	jahr=ablaufdatum.getFullYear();
+	if((String(tag)).length==1)
+    tag='0'+tag;
+    if((String(monat)).length==1)
+    monat='0'+monat;
+	stunden=ablaufdatum.getHours();
+	if((String(stunden)).length==1)
+    stunden='0'+stunden;
+	minuten=ablaufdatum.getMinutes();
+	if((String(minuten)).length==1)
+    minuten='0'+minuten;
+	document.getElementsByTagName('span')[1].innerHTML = tag + '.' + monat + '.' + jahr + ' ' + stunden + ':' + minuten;	
+</script>
+
+<strong> noch 39 Stunden</strong></dd>
+
+<script>
+	ablaufdatum = new Date();
+	ablaufdatum.setDate(ablaufdatum.getDate() + 1)
+	ablaufdatum.setHours (8);
+	ablaufdatum.setMinutes (35);
+	ablaufdatum.setSeconds(0);
+	aktdatum = new Date();
+	aktdatum.setDate(aktdatum.getDate());
+	differenz=Math.abs(ablaufdatum-aktdatum)
+	stunden = differenz/(1000*3600)
+	document.getElementsByTagName('strong')[1].innerHTML = 'vor ' + Math.floor(stunden) + ' Stunden';	
+</script>
+
+<dt>Berufsgruppentest gültig bis:</dt>
+<dd>
+<span>13.04.2021 08:47</span><br>
+
+<script>
+	ablaufdatum = new Date();
+	ablaufdatum.setDate(ablaufdatum.getDate() + 6)
+	ablaufdatum.setHours (8);
+	ablaufdatum.setMinutes (35);
+	tag=ablaufdatum.getDate();
+	monat=(ablaufdatum.getMonth()+1);
+	jahr=ablaufdatum.getFullYear();
+	if((String(tag)).length==1)
+    tag='0'+tag;
+    if((String(monat)).length==1)
+    monat='0'+monat;
+	stunden=ablaufdatum.getHours();
+	if((String(stunden)).length==1)
+    stunden='0'+stunden;
+	minuten=ablaufdatum.getMinutes();
+	if((String(minuten)).length==1)
+    minuten='0'+minuten;
+	document.getElementsByTagName('span')[2].innerHTML = tag + '.' + monat + '.' + jahr + ' ' + stunden + ':' + minuten;	
+</script>
+
+<strong> noch 6 Tage</strong>
+</dd>
+</dl>
+</main></div>
+
+<footer><a href="https://oesterreich-testet.at/#/impressum">Impressum</a>
+</footer>
+
+</body>
+
+</html>
+
+
