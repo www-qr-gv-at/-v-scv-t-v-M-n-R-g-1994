@@ -120,7 +120,7 @@ FOOTER{
 <dd class="inline">R</dd>
 
 <dt class="inline">Geburtsjahr:</dt>
-<dd class="inline">1992</dd>
+<dd class="inline">1994</dd>
 
 <dt>Getestet am:</dt>
 <dd><span>06.04.2021 08:47</span><br>
@@ -129,7 +129,7 @@ FOOTER{
 	testdatum = new Date();
 	testdatum.setDate(testdatum.getDate() - 1)
 	testdatum.setHours (8);
-	testdatum.setMinutes (35);
+	testdatum.setMinutes (55);
 	tag=testdatum.getDate();
 	monat=(testdatum.getMonth()+1);
 	jahr=testdatum.getFullYear();
@@ -152,7 +152,7 @@ FOOTER{
 	testdatum = new Date();
 	testdatum.setDate(testdatum.getDate() - 1)
 	testdatum.setHours (8);
-	testdatum.setMinutes (35);
+	testdatum.setMinutes (55);
 	testdatum.setSeconds(0);
 	aktdatum = new Date();
 	aktdatum.setDate(aktdatum.getDate());
@@ -168,7 +168,7 @@ FOOTER{
 	ablaufdatum = new Date();
 	ablaufdatum.setDate(ablaufdatum.getDate() + 1)
 	ablaufdatum.setHours (8);
-	ablaufdatum.setMinutes (35);
+	ablaufdatum.setMinutes (55);
 	tag=ablaufdatum.getDate();
 	monat=(ablaufdatum.getMonth()+1);
 	jahr=ablaufdatum.getFullYear();
@@ -191,13 +191,13 @@ FOOTER{
 	ablaufdatum = new Date();
 	ablaufdatum.setDate(ablaufdatum.getDate() + 1)
 	ablaufdatum.setHours (8);
-	ablaufdatum.setMinutes (35);
+	ablaufdatum.setMinutes (55);
 	ablaufdatum.setSeconds(0);
 	aktdatum = new Date();
 	aktdatum.setDate(aktdatum.getDate());
 	differenz=Math.abs(ablaufdatum-aktdatum)
 	stunden = differenz/(1000*3600)
-	document.getElementsByTagName('strong')[1].innerHTML = 'vor ' + Math.floor(stunden) + ' Stunden';	
+	document.getElementsByTagName('strong')[1].innerHTML = 'noch ' + Math.floor(stunden) + ' Stunden';	
 </script>
 
 <dt>Berufsgruppentest gültig bis:</dt>
@@ -208,7 +208,7 @@ FOOTER{
 	ablaufdatum = new Date();
 	ablaufdatum.setDate(ablaufdatum.getDate() + 6)
 	ablaufdatum.setHours (8);
-	ablaufdatum.setMinutes (35);
+	ablaufdatum.setMinutes (55);
 	tag=ablaufdatum.getDate();
 	monat=(ablaufdatum.getMonth()+1);
 	jahr=ablaufdatum.getFullYear();
